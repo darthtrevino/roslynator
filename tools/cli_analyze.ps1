@@ -2,7 +2,7 @@
 
 dotnet build "$PSScriptRoot/../src/CommandLine.slnx" /p:Configuration=Debug /v:m /m
 
-roslynator analyze "$PSScriptRoot/../src/Roslynator.slnx" `
+roslynator analyze "$PSScriptRoot/../src/Roslynator.sln" `
     --analyzer-assemblies `
     "$PSScriptRoot/../src/Analyzers.CodeFixes/bin/Debug/netstandard2.0/Roslynator.CSharp.Analyzers.dll" `
     "$PSScriptRoot/../src/CodeAnalysis.Analyzers.CodeFixes/bin/Debug/netstandard2.0/Roslynator.CodeAnalysis.Analyzers.dll" `

@@ -1,6 +1,6 @@
 {
   "solution": {
-    "path": "Roslynator.slnx",
+    "path": "Roslynator.sln",
     "projects": [
       "CSharp.Workspaces\\CSharp.Workspaces.csproj",
       "CSharp\\CSharp.csproj",

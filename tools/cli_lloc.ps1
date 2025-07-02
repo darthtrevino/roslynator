@@ -2,7 +2,7 @@
 
 dotnet build "$PSScriptRoot/../src/CommandLine.slnx" /p:Configuration=Debug /v:m /m
 
-roslynator lloc "$PSScriptRoot/../src/Roslynator.slnx" `
+roslynator lloc "$PSScriptRoot/../src/Roslynator.sln" `
     --verbosity d `
     --file-log "roslynator.log" `
     --file-log-verbosity diag
