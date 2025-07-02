@@ -64,9 +64,7 @@ internal static class DiagnosticGitLabJsonSerializer
 #else
             hashBytes = SHA256.HashData(source);
 #endif
-            issueFingerPrint = BitConverter.ToString(hashBytes)
-                .Replace("-", "")
-                .ToLowerInvariant();
+            issueFingerPrint = BitConverter.ToString(hashBytes).ToHexStringLower();
 
             reportItems.Add(new GitLabIssue()
             {
