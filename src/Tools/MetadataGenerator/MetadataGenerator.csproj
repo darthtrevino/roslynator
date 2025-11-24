@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net9.0;net10.0</TargetFrameworks>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -14,6 +14,9 @@
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="$(RoslynatorRoslynVersion)" />
     <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="$(RoslynatorRoslynVersion)" />
     <PackageReference Include="Microsoft.Build.Locator" Version="$(RoslynatorMicrosoftBuildLocatorVersion)" />
+
+    <!-- An unsafe version is being transitively included with Microsoft.CodeAnalysis.Workspaces.MSBuild-->
+    <PackageReference Include="System.Drawing.Common" Version="4.7.2" />
   </ItemGroup>
 
   <ItemGroup>
